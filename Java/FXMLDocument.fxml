@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="feistel.ciphar.FXMLDocumentController">
+    <children>
+      <TextField fx:id="plaintext" layoutX="68.0" layoutY="26.0" />
+      <Label layoutX="13.0" layoutY="30.0" prefHeight="17.0" prefWidth="71.0" text="Plain Text" />
+      <Label layoutX="221.0" layoutY="30.0" prefHeight="17.0" prefWidth="28.0" text="Key" />
+      <Label layoutX="11.0" layoutY="68.0" text="Function" />
+      <ChoiceBox fx:id="function" layoutX="68.0" layoutY="64.0" prefWidth="150.0" />
+      <TextField fx:id="key" layoutX="249.0" layoutY="26.0" prefHeight="25.0" prefWidth="57.0" />
+      <Button layoutX="252.0" layoutY="161.0" mnemonicParsing="false" onAction="#encryptbutton" text="Encrypt" />
+      <Button layoutX="188.0" layoutY="161.0" mnemonicParsing="false" onAction="#decryptbutton" text="Decrypt" />
+      <Label fx:id="output" layoutX="65.0" layoutY="100.0" prefHeight="17.0" prefWidth="71.0" />
+      <Label fx:id="decryptlabel" layoutX="65.0" layoutY="117.0" prefHeight="17.0" prefWidth="86.0" />
+      <Label layoutX="13.0" layoutY="100.0" prefHeight="17.0" prefWidth="56.0" text="encrypt:" />
+      <Label layoutX="13.0" layoutY="117.0" prefHeight="17.0" prefWidth="56.0" text="decrypt:" />
+    </children>
+</AnchorPane>
